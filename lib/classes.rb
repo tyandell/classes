@@ -2,3 +2,4 @@
 
 require "classes/version"
 require "classes/class_list"
+require "classes/helpers"
