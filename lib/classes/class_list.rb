@@ -15,6 +15,8 @@ module Classes
 
       unless arg.is_a?(Enumerable)
         arg = arg.to_s
+        return self if arg.empty?
+
         if arg.match?(/\s/)
           arg = self.class.parse(arg)
         else

@@ -16,6 +16,12 @@ module Classes
       assert_equal "", ClassList.parse(" ").to_s
     end
 
+    def test_add_nil
+      l = ClassList.new
+      l << nil
+      assert_equal "", l.to_s
+    end
+
     def test_add_false
       l = ClassList.new
       l << false
@@ -42,6 +48,18 @@ module Classes
       end
       mock.verify
       assert_equal "a b", l.to_s
+    end
+
+    def test_add_empty_string
+      l = ClassList.new(["a"])
+      l << ""
+      assert_equal "a", l.to_s
+    end
+
+    def test_add_whitespace_string
+      l = ClassList.new(["a"])
+      l << " "
+      assert_equal "a", l.to_s
     end
 
     def test_add_symbol
