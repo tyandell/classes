@@ -1,5 +1,7 @@
 # classes
 
+![Tests](https://github.com/tyandell/classes/workflows/Tests/badge.svg)
+
 classes is a Ruby gem that lets you do:
 
 ```erb
