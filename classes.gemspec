@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "A helper for building CSS class names"
   spec.description = "classes is a helper for building CSS class names in your Rails or Sinatra views. It's great for toggling individual classes or combining class names across your views and partials."
   spec.homepage = "https://github.com/tyandell/classes"
+  spec.license = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
